@@ -10,6 +10,7 @@ function App() {
     <Stack spacing={2} sx={{ minHeight: "100vh", bgcolor: "#fafafa" }}>
       <Header />
       <Container maxWidth="xl" sx={{ flex: "1" }}>
+        <h1>Test Changes</h1>
         <Outlet />
       </Container>
       <Footer />
