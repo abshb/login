@@ -14,6 +14,7 @@ const Login = () => {
   const { login } = useContext(AuthContext);
 
   const navigate = useNavigate();
+
   const handleLogin = (event) => {
     event.preventDefault();
     localStorage.removeItem("access_token");
@@ -22,7 +23,10 @@ const Login = () => {
       password: loginPassword,
     };
     axios
-      .post("http://localhost:4000/auth/login", data)
+      .post(
+        "devbase.cdusswgkwy6w.eu-north-1.rds.amazonaws.com/auth/login",
+        data
+      )
       .then((response) => {
         if (response.data.access_token) {
           const token = response.data.access_token;

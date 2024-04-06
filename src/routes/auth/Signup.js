@@ -22,7 +22,10 @@ const Signup = () => {
       password: password,
     };
     axios
-      .post("http://localhost:4000/users/signup", data)
+      .post(
+        "devbase.cdusswgkwy6w.eu-north-1.rds.amazonaws.com/users/signup",
+        data
+      )
       .then((response) => {
         console.log(response);
         navigate("/", { replace: true });
