@@ -85,10 +85,10 @@ const Login = () => {
               />
 
               <Button type="submit" variant="contained" size="large">
-                Login
+                Signup
               </Button>
               <Button
-                variant="outlined"
+                variant="text"
                 size="large"
                 onClick={() => navigate("/signup")}
               >
